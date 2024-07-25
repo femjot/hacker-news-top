@@ -22,6 +22,7 @@ export default async function Page(props: {
           <div className="my-4">
             <h1 className="text-4xl">
               <a
+                aria-label="Read more about story {story.title}"
                 className="cursor-pointer text-3xl"
                 href={story.url}
                 target="_blank"
