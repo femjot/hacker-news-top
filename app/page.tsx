@@ -12,7 +12,7 @@ export default async function Home() {
 
   return (
     <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <h1>Hacker News Top 20 Stories</h1>
+      <h1>Hacker News Top Stories</h1>
       <ul>
         {!!topStories &&
           topStories.map((story: HackerNewsStoryType, idx: number) => (

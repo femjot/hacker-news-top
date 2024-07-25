@@ -8,3 +8,13 @@ export type HackerNewsStoryType = {
   type: string;
   url: string;
 };
+
+export type FeedbackFormStateType = {
+  errors?: {
+    name?: string[];
+    email?: string[];
+    feedback?: string[];
+  };
+  message?: string | null;
+  success: boolean;
+};

@@ -13,7 +13,7 @@ export const fetchItem = async (id: string) => {
 export const fetchTopStoriesIds = async () => {
   try {
     const response = await fetch(
-      'https://hacker-news.firebaseio.com/v0/topstories.json?print=pretty&orderBy="$priority"&limitToFirst=10',
+      'https://hacker-news.firebaseio.com/v0/topstories.json?print=pretty&orderBy="$priority"',
     );
     const data = await response.json();
     return data.slice(0, 30);
