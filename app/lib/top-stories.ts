@@ -4,9 +4,6 @@ const DETAIL_URL = (id: number) => `${BASE_URL}/item/${id}.json`;
 export const fetchItem = async (id: number) => {
   try {
     const response = await fetch(DETAIL_URL(id));
-    if (!response.ok) {
-      throw new Error("Fetching item failed");
-    }
     const story = await response.json();
 
     return story;
@@ -21,9 +18,6 @@ export const fetchTopStoriesIds = async () => {
     const response = await fetch(
       'https://hacker-news.firebaseio.com/v0/topstories.json?print=pretty&orderBy="$priority"',
     );
-    if (!response.ok) {
-      throw new Error("Fetching top stories failed");
-    }
     const data = await response.json();
 
     return data;
