@@ -32,7 +32,7 @@ export default async function Home() {
       <div>
         <FeedbackButton />
       </div>
-      <h2 className="font-inter">Discover hacker news top stories!</h2>
+      <h2 className="pt-4 font-inter">Discover hacker news top stories!</h2>
     </main>
   );
 }
