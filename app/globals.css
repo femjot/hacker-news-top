@@ -23,7 +23,7 @@
       Droid Sans,
       Helvetica Neue,
       sans-serif;
-    @apply bg-gradient bg-cover bg-[50%] bg-repeat h-full font-inter;
+    @apply bg-gradient bg-cover bg-[50%] bg-repeat w-full font-inter;
   }
 
   h1 {
