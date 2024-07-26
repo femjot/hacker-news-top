@@ -3,7 +3,7 @@
 import Link from "next/link";
 import { useFormStatus } from "react-dom";
 
-function SendFeedbackButton() {
+const SendFeedbackButton = () => {
   const { pending } = useFormStatus();
 
   return (
@@ -30,6 +30,6 @@ function SendFeedbackButton() {
       </div>
     </div>
   );
-}
+};
 
 export default SendFeedbackButton;

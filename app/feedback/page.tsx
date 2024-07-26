@@ -1,7 +1,7 @@
 import Head from "next/head";
-import { FeedbackForm } from "../components/feedback-form.client";
+import FeedbackForm from "@/app/components/feedback-form.client";
 
-export default function Page() {
+export default async function Page() {
   return (
     <>
       <Head>

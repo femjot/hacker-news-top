@@ -2,11 +2,12 @@
 
 import Link from "next/link";
 import { useFormStatus } from "react-dom";
+import { SyntheticEvent } from "react";
 
-function FeedbackButton() {
+const FeedbackButton = () => {
   const { pending } = useFormStatus();
 
-  const handleClick = (event) => {
+  const handleClick = (event: SyntheticEvent) => {
     if (pending) {
       event.preventDefault();
     }
@@ -25,6 +26,6 @@ function FeedbackButton() {
       </button>
     </div>
   );
-}
+};
 
 export default FeedbackButton;

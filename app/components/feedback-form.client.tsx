@@ -7,7 +7,7 @@ import { FeedbackFormStateType } from "@/types";
 import { useFormState } from "react-dom";
 import FormErrors from "@/app/components/form-errors.client";
 
-export function FeedbackForm() {
+const FeedbackForm = () => {
   const initialState: FeedbackFormStateType = {
     message: null,
     errors: {},
@@ -91,4 +91,6 @@ export function FeedbackForm() {
       </div>
     </form>
   );
-}
+};
+
+export default FeedbackForm;
