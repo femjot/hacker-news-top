@@ -89,9 +89,6 @@ export function FeedbackForm() {
         <SendFeedbackButton />
         {state.success && <div className="successMessage">{state.message}</div>}
       </div>
-      {/*<button id="submit" type="submit">*/}
-      {/*  Submit*/}
-      {/*</button>*/}
     </form>
   );
 }
