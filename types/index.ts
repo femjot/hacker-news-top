@@ -1,9 +1,9 @@
 export type HackerNewsStoryType = {
   by: string;
   descendants: number;
-  id: string;
+  id: number;
   score: number;
-  time: Date;
+  time: number;
   title: string;
   type: string;
   url: string;

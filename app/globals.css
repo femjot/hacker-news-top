@@ -11,13 +11,23 @@
   body {
     padding: 0;
     margin: 0;
-    font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+    font-family:
+      -apple-system,
+      BlinkMacSystemFont,
+      Segoe UI,
+      Roboto,
+      Oxygen,
+      Ubuntu,
+      Cantarell,
+      Fira Sans,
+      Droid Sans,
+      Helvetica Neue,
+      sans-serif;
     @apply bg-gradient bg-cover bg-[50%] bg-repeat h-full font-inter;
   }
 
   h1 {
-      @apply text-4xl font-bold text-amber-900 md:text-5xl lg:text-7xl font-inter;
+    @apply text-4xl font-bold text-amber-900 md:text-5xl lg:text-7xl font-inter;
   }
 
   a {
@@ -33,48 +43,48 @@
     @apply text-base font-medium;
   }
 
-    .form-wrapper {
-        height: 100vh;
-        padding-bottom: 20px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
+  .form-wrapper {
+    height: 100vh;
+    padding-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 
-    form {
-        width: 100%;
-        max-width: 600px;
-        border-radius: 30px;
-        background: #fff;
-        margin: 0 auto;
-        padding-bottom: 10px;
-    }
+  form {
+    width: 100%;
+    max-width: 600px;
+    border-radius: 30px;
+    background: #fff;
+    margin: 0 auto;
+    padding-bottom: 10px;
+  }
 
-    .form-inner {
-        padding-inline: 40px;
-        padding-block: 30px 40px;
-    }
+  .form-inner {
+    padding-inline: 40px;
+    padding-block: 30px 40px;
+  }
 
-    .form-inner input,
-    .form-inner textarea {
-        display: block;
-        width: 100%;
-        padding: 15px;
-        margin-bottom: 10px;
-        border: none;
-        border-radius: 20px;
-        background: lightgray;
-    }
+  .form-inner input,
+  .form-inner textarea {
+    display: block;
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 20px;
+    background: lightgray;
+  }
 
-    .form-inner textarea {
-        resize: none;
-    }
+  .form-inner textarea {
+    resize: none;
+  }
 
-    input,
-    textarea {
-        outline: none;
-    }
+  input,
+  textarea {
+    outline: none;
+  }
 
   h1,
   h2,
@@ -89,7 +99,7 @@
   }
 
   button {
-      @apply w-fit cursor-pointer rounded-lg border-0 px-6 py-4 text-lg text-white hover:bg-violet-900;
+    @apply w-fit cursor-pointer rounded-lg border-0 px-6 py-4 text-lg text-white hover:bg-violet-900;
   }
 
   button:focus {
@@ -99,12 +109,20 @@
   p {
     @apply m-0 text-2xl font-bold md:text-3xl;
   }
+
+  .successMessage {
+    @apply mt-3 pl-20 pt-3 pb-3 font-black rounded bg-green-200;
+  }
+
+  .errorMessage {
+    @apply text-sm text-red-600 font-black;
+  }
 }
 
 @layer components {
   /* glass-morphism */
   .glass {
-      @apply border border-solid border-[hsla(0,0%,100%,0.2)] backdrop-blur-[10px] hover:border hover:border-solid hover:border-white;
+    @apply border border-solid border-[hsla(0,0%,100%,0.2)] backdrop-blur-[10px] hover:border hover:border-solid hover:border-white;
     -webkit-backdrop-filter: blur(10px);
   }
 

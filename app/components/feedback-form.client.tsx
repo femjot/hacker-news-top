@@ -26,14 +26,7 @@ export function FeedbackForm() {
   }, [state]);
 
   return (
-    <form
-      ref={formRef}
-      action={formAction}
-      // action={async (formData) => {
-      //   await handleFeedbackFormSubmit(initialState, formData);
-      //   ref.current?.reset();
-      // }}
-    >
+    <form ref={formRef} action={formAction}>
       <div className="max-w-xl mx-auto mt-16 flex w-full flex-col border rounded-lg bg-white p-8">
         <h2 className="title-font mb-1 text-lg font-medium text-gray-900">
           Please feel free to leave any comments here.
@@ -93,12 +86,12 @@ export function FeedbackForm() {
           ></textarea>
           <FormErrors errors={state.errors?.feedback} />
         </div>
-        {state.success && state.message}
         <SendFeedbackButton />
+        {state.success && <div className="successMessage">{state.message}</div>}
       </div>
-      <button id="submit" type="submit">
-        Submit
-      </button>
+      {/*<button id="submit" type="submit">*/}
+      {/*  Submit*/}
+      {/*</button>*/}
     </form>
   );
 }

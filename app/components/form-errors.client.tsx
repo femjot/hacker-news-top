@@ -9,7 +9,7 @@ const FormErrors = ({ errors }: FormErrorsProps) => {
     <div>
       {errors.map((err) => {
         return (
-          <p className="text-sm text-tiny text-red-400" key={err}>
+          <p className="errorMessage" key={err}>
             {err}
           </p>
         );
